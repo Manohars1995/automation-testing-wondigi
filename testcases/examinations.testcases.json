@@ -1,0 +1,89 @@
+{
+  "project": {
+    "name": "WON DIGI",
+    "url": "https://test.wondigi.com",
+    "executedBy": "Automation",
+    "build": "Examinations Module"
+  },
+  "module": "Examinations",
+  "testcases": [
+    {
+      "id": "EX001",
+      "scenario": "Verify exam toggles",
+      "steps": "Check Half yearly, Final, Unit test-2 toggles",
+      "expected": "All toggles visible"
+    },
+    {
+      "id": "EX002",
+      "scenario": "Toggle Half yearly",
+      "steps": "Enable/Disable Half yearly",
+      "expected": "Toggle works"
+    },
+    {
+      "id": "EX003",
+      "scenario": "Toggle Final",
+      "steps": "Enable/Disable Final",
+      "expected": "Toggle works"
+    },
+    {
+      "id": "EX004",
+      "scenario": "Toggle Unit test-2",
+      "steps": "Enable/Disable Unit test-2",
+      "expected": "Toggle works"
+    },
+    {
+      "id": "EX005",
+      "scenario": "Valid search",
+      "steps": "Search existing exam",
+      "expected": "Records displayed"
+    },
+    {
+      "id": "EX006",
+      "scenario": "Invalid search",
+      "steps": "Search random text",
+      "expected": "No records found"
+    },
+    {
+      "id": "EX007",
+      "scenario": "Add exam form fields",
+      "steps": "Click +ADD",
+      "expected": "All fields visible"
+    },
+    {
+      "id": "EX008",
+      "scenario": "Exam ID auto generated",
+      "steps": "Check exam ID field",
+      "expected": "Auto generated ID"
+    },
+    {
+      "id": "EX009",
+      "scenario": "Start & End date validation",
+      "steps": "Verify system date editable",
+      "expected": "Dates auto populated"
+    },
+    {
+      "id": "EX010",
+      "scenario": "Create exam",
+      "steps": "Enter valid timetable details",
+      "expected": "Record created"
+    },
+    {
+      "id": "EX011",
+      "scenario": "Invalid timetable",
+      "steps": "Submit empty timetable",
+      "expected": "Validation error shown"
+    },
+    {
+      "id": "EX012",
+      "scenario": "Mobile responsive",
+      "steps": "Open in mobile view",
+      "expected": "Responsive layout"
+    },
+    {
+      "id": "EX013",
+      "scenario": "Tablet responsive",
+      "steps": "Open in tablet view",
+      "expected": "Responsive layout"
+    }
+  ]
+}

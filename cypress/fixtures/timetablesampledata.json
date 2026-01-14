@@ -1,0 +1,60 @@
+{
+  "class": "XII",
+  "section": "A",
+  "academicYear": "2025-26",
+  "noOfPeriods": "6",
+  "periodDuration": "1",
+  "roomNo": "320",
+  "status": "Active",
+
+  "weeklySchedule": {
+    "Monday": {
+      "staffId": "1111",
+      "staffName": "Manohar",
+      "subject": "Telugu",
+      "period": "1",
+      "start": "10:30",
+      "end": "11:30"
+    },
+    "Tuesday": {
+      "staffId": "1111",
+      "staffName": "Manohar",
+      "subject": "Telugu",
+      "period": "1",
+      "start": "10:30",
+      "end": "11:30"
+    },
+    "Wednesday": {
+      "staffId": "1111",
+      "staffName": "Manohar",
+      "subject": "Telugu",
+      "period": "1",
+      "start": "10:30",
+      "end": "11:30"
+    },
+    "Thursday": {
+      "staffId": "1111",
+      "staffName": "Manohar",
+      "subject": "Telugu",
+      "period": "1",
+      "start": "10:30",
+      "end": "11:30"
+    },
+    "Friday": {
+      "staffId": "1111",
+      "staffName": "Manohar",
+      "subject": "Telugu",
+      "period": "1",
+      "start": "10:30",
+      "end": "11:30"
+    },
+    "Saturday": {
+      "staffId": "1111",
+      "staffName": "Manohar",
+      "subject": "Telugu",
+      "period": "1",
+      "start": "10:30",
+      "end": "11:30"
+    }
+  }
+}

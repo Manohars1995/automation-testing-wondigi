@@ -1,0 +1,15 @@
+{
+  "serviceName": "Teacher",
+  "category": "Academic",
+  "subCategory": "Lab Fee",
+  "price": "1000",
+  "discount": "1",
+  "tax": "1",
+  "status": "Active",
+  "class": "Grade 1",
+  "section": "A",
+  "location": "Vijayawada",
+  "email": "manohar142652@gmail.com",
+  "contact": "9515310258",
+  "description": "Hi"
+}

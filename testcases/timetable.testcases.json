@@ -1,0 +1,24 @@
+{
+  "project": {
+    "name": "WON DIGI",
+    "url": "https://test.wondigi.com",
+    "executedBy": "Automation",
+    "build": "Time Table Module"
+  },
+  "module": "Time Table",
+  "testcases": [
+    { "id": "TT001", "scenario": "Verify timetable cards", "steps": "Open timetable list", "expected": "Cards visible" },
+    { "id": "TT002", "scenario": "Import Export Download", "steps": "Open menu", "expected": "Options visible" },
+    { "id": "TT003", "scenario": "Valid search", "steps": "Search existing class", "expected": "Records shown" },
+    { "id": "TT004", "scenario": "Invalid search", "steps": "Search random text", "expected": "No data" },
+    { "id": "TT005", "scenario": "Add form display", "steps": "Click Add", "expected": "Form visible" },
+    { "id": "TT006", "scenario": "Auto ID", "steps": "Check TimeTable ID", "expected": "Auto generated" },
+    { "id": "TT007", "scenario": "Working days locked", "steps": "Check working days", "expected": "Disabled" },
+    { "id": "TT008", "scenario": "Create timetable", "steps": "Fill valid data", "expected": "Record created" },
+    { "id": "TT009", "scenario": "Empty submit", "steps": "Submit empty", "expected": "Errors shown" },
+    { "id": "TT010", "scenario": "Active status", "steps": "Create active", "expected": "Active shown" },
+    { "id": "TT011", "scenario": "Inactive status", "steps": "Create inactive", "expected": "Inactive shown" },
+    { "id": "TT012", "scenario": "Mobile responsive", "steps": "iPhone view", "expected": "Layout OK" },
+    { "id": "TT013", "scenario": "Tablet responsive", "steps": "Tablet view", "expected": "Layout OK" }
+  ]
+}

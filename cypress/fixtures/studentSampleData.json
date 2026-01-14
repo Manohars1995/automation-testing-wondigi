@@ -1,0 +1,33 @@
+{
+  "admissionNo": "12345678",
+  "penNo": "12345678",
+  "fullName": "Manohar",
+  "gender": "Male",
+  "dob": "1995-11-16",
+  "caste": "Hindu",
+  "nationality": "India",
+  "state": "Andhra Pradesh",
+  "city": "Vijayawada",
+  "doorNo": "1111",
+  "street": "Abc Street",
+  "pincode": "520007",
+  "status": "Inactive",
+
+  "parentName": "Rambabu",
+  "relationship": "Father",
+  "guardianContact": "912345678",
+  "motherName": "Sridevi",
+  "email": "manohar142652@gmail.com",
+  "occupation": "Priest",
+
+  "schoolName": "Manohar Schools",
+  "lastClass": "XII",
+
+  "grade": "Grade 1",
+  "section": "A",
+
+  "emergencyContact": "9515310258",
+  "medical": "YES",
+  "product": "SV000001",
+  "attachment": "Aadhar"
+}

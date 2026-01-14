@@ -1,0 +1,21 @@
+{
+  "project": {
+    "name": "WON DIGI",
+    "url": "https://test.wondigi.com",
+    "executedBy": "Automation",
+    "build": "Circulars Module"
+  },
+  "module": "Circulars",
+  "testcases": [
+    { "id": "CR001", "scenario": "Valid search", "steps": "Search Holiday", "expected": "Record displayed" },
+    { "id": "CR002", "scenario": "Invalid search", "steps": "Search random text", "expected": "No records found" },
+    { "id": "CR003", "scenario": "Add circular form", "steps": "Click +ADD", "expected": "All fields visible" },
+    { "id": "CR004", "scenario": "Create circular", "steps": "Enter valid data", "expected": "Circular created" },
+    { "id": "CR005", "scenario": "Mandatory fields", "steps": "Enter mandatory fields", "expected": "Circular created" },
+    { "id": "CR006", "scenario": "Empty title", "steps": "Leave title empty", "expected": "Validation error" },
+    { "id": "CR007", "scenario": "Empty subject", "steps": "Leave subject empty", "expected": "Validation error" },
+    { "id": "CR008", "scenario": "Empty form submit", "steps": "Submit empty form", "expected": "Validation error" },
+    { "id": "CR009", "scenario": "Mobile responsive", "steps": "Open in mobile view", "expected": "Responsive layout" },
+    { "id": "CR010", "scenario": "Tablet responsive", "steps": "Open in tablet view", "expected": "Responsive layout" }
+  ]
+}

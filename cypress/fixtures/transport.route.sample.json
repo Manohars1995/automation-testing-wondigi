@@ -1,0 +1,10 @@
+{
+  "routeName": "Benz Circle - Kanuru",
+  "busNumber": "12345679",
+  "driverName": "Manohar",
+  "contact": "9515310258",
+  "firstStop": "Benz Circle",
+  "lastStop": "Kanuru",
+  "status": "Active",
+  "stopAddress": "1111, abc street, Vijayawada - 520013"
+}

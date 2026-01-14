@@ -1,0 +1,23 @@
+{
+  "project": {
+    "name": "WON Digi",
+    "url": "https://test.wondigi.com",
+    "executedBy": "QA Automation",
+    "build": "Calendar Module"
+  },
+  "module": "Calendar",
+  "testcases": [
+    { "id": "CL001", "scenario": "Week view", "steps": "Click week icon", "expected": "Week view displayed" },
+    { "id": "CL002", "scenario": "Day view", "steps": "Click day icon", "expected": "Day view displayed" },
+    { "id": "CL003", "scenario": "Agenda view", "steps": "Click agenda icon", "expected": "Agenda view displayed" },
+    { "id": "CL004", "scenario": "Today navigation", "steps": "Click today", "expected": "Today shown" },
+    { "id": "CL005", "scenario": "Previous navigation", "steps": "Click prev", "expected": "Previous date shown" },
+    { "id": "CL006", "scenario": "Next navigation", "steps": "Click next", "expected": "Next date shown" },
+    { "id": "CL007", "scenario": "Event popup", "steps": "Click event", "expected": "Popup opens" },
+    { "id": "CL008", "scenario": "Edit event", "steps": "Edit event", "expected": "Edit popup opens" },
+    { "id": "CL009", "scenario": "Cancel edit", "steps": "Cancel edit", "expected": "Popup closes" },
+    { "id": "CL010", "scenario": "Alignment", "steps": "Check layout", "expected": "Aligned properly" },
+    { "id": "CL011", "scenario": "Mobile responsive", "steps": "Mobile view", "expected": "Responsive" },
+    { "id": "CL012", "scenario": "Tablet responsive", "steps": "Tablet view", "expected": "Responsive" }
+  ]
+}

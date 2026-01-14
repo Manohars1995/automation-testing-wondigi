@@ -1,0 +1,14 @@
+{
+  "student": {
+    "class": "Grade 1",
+    "section": "A",
+    "period": "1",
+    "searchValid": "Kayal",
+    "searchInvalid": "Java"
+  },
+  "staff": {
+    "jobTitle": "Principal",
+    "department": "English",
+    "searchInvalid": "XYZ"
+  }
+}

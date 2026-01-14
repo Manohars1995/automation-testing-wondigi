@@ -1,0 +1,26 @@
+{
+  "project": {
+    "name": "WON DIGI",
+    "url": "https://test.wondigi.com",
+    "executedBy": "Automation",
+    "build": "Diary Module"
+  },
+  "module": "Diary",
+  "testcases": [
+    { "id": "DI001", "scenario": "Open diary page", "steps": "Navigate to diary page", "expected": "Diary page opens" },
+    { "id": "DI002", "scenario": "Diary ID auto-generated", "steps": "Open create diary", "expected": "Diary ID auto generated" },
+    { "id": "DI003", "scenario": "Staff ID dropdown", "steps": "Click staff ID dropdown", "expected": "Staff IDs displayed" },
+    { "id": "DI004", "scenario": "Auto staff name", "steps": "Select staff ID", "expected": "Staff name auto populated" },
+    { "id": "DI005", "scenario": "System date", "steps": "Check date field", "expected": "System date displayed" },
+    { "id": "DI006", "scenario": "Class dropdown", "steps": "Select Grade 1", "expected": "Grade 1 selected" },
+    { "id": "DI007", "scenario": "Section dropdown", "steps": "Select A", "expected": "Section A selected" },
+    { "id": "DI008", "scenario": "Subject dropdown", "steps": "Select subject", "expected": "Subject selected" },
+    { "id": "DI009", "scenario": "Diary text entry", "steps": "Enter diary text", "expected": "Diary text accepted" },
+    { "id": "DI010", "scenario": "Status dropdown", "steps": "Select Active", "expected": "Active selected" },
+    { "id": "DI011", "scenario": "Submit diary", "steps": "Click Add", "expected": "Diary saved" },
+    { "id": "DI012", "scenario": "Search diary", "steps": "Search diary", "expected": "Filtered results" },
+    { "id": "DI013", "scenario": "Invalid search", "steps": "Search invalid", "expected": "No records found" },
+    { "id": "DI014", "scenario": "Mobile responsiveness", "steps": "Mobile viewport", "expected": "Responsive UI" },
+    { "id": "DI015", "scenario": "Tablet responsiveness", "steps": "Tablet viewport", "expected": "Responsive UI" }
+  ]
+}

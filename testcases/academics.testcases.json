@@ -1,0 +1,71 @@
+{
+  "project": {
+    "name": "WON DIGI",
+    "url": "https://test.wondigi.com",
+    "executedBy": "Automation QA",
+    "build": "Academics Attendance Module"
+  },
+  "module": "Academics Attendance",
+  "testcases": [
+    {
+      "id": "ST001",
+      "scenario": "Verify system date in Student Attendance",
+      "steps": "Open student attendance page",
+      "expected": "System date should be displayed"
+    },
+    {
+      "id": "ST002",
+      "scenario": "Search valid student",
+      "steps": "Search with valid name",
+      "expected": "Student record should be displayed"
+    },
+    {
+      "id": "ST003",
+      "scenario": "Search invalid student",
+      "steps": "Search with invalid name",
+      "expected": "No records should be displayed"
+    },
+    {
+      "id": "ST004",
+      "scenario": "Verify student attendance table fields",
+      "steps": "Verify columns",
+      "expected": "All columns should be visible"
+    },
+    {
+      "id": "ST005",
+      "scenario": "Mark student present",
+      "steps": "Select P radio button",
+      "expected": "Student marked present"
+    },
+    {
+      "id": "ST006",
+      "scenario": "Verify student attendance responsiveness",
+      "steps": "Switch to mobile and tablet view",
+      "expected": "UI should be responsive"
+    },
+    {
+      "id": "ST007",
+      "scenario": "Verify system date in Staff Attendance",
+      "steps": "Open staff attendance page",
+      "expected": "System date should be displayed"
+    },
+    {
+      "id": "ST008",
+      "scenario": "Verify staff attendance table fields",
+      "steps": "Verify staff table columns",
+      "expected": "All staff columns visible"
+    },
+    {
+      "id": "ST009",
+      "scenario": "Search staff record",
+      "steps": "Search using top search",
+      "expected": "Filtered records displayed"
+    },
+    {
+      "id": "ST010",
+      "scenario": "Verify staff attendance responsiveness",
+      "steps": "Switch to mobile and tablet view",
+      "expected": "UI should be responsive"
+    }
+  ]
+}

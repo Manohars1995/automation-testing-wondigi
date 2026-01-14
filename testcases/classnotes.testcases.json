@@ -1,0 +1,71 @@
+{
+  "project": {
+    "name": "WON DIGI",
+    "url": "https://test.wondigi.com",
+    "executedBy": "Automation",
+    "build": "Class Notes Module"
+  },
+  "module": "Class Notes",
+  "testcases": [
+    {
+      "id": "CN001",
+      "scenario": "Verify document icons",
+      "steps": "Check PDF Maker, Demo, Okok icons",
+      "expected": "All icons should be visible"
+    },
+    {
+      "id": "CN002",
+      "scenario": "Verify icon click",
+      "steps": "Click PDF Maker",
+      "expected": "PDF Maker details displayed"
+    },
+    {
+      "id": "CN003",
+      "scenario": "Valid search",
+      "steps": "Search with valid note name",
+      "expected": "Matching records shown"
+    },
+    {
+      "id": "CN004",
+      "scenario": "Invalid search",
+      "steps": "Search with random text",
+      "expected": "No records found message"
+    },
+    {
+      "id": "CN005",
+      "scenario": "Mobile responsiveness",
+      "steps": "Open in mobile view",
+      "expected": "Layout adjusts correctly"
+    },
+    {
+      "id": "CN006",
+      "scenario": "Tablet responsiveness",
+      "steps": "Open in tablet view",
+      "expected": "Layout adjusts correctly"
+    },
+    {
+      "id": "CN007",
+      "scenario": "Add Notes form fields",
+      "steps": "Open Add Notes",
+      "expected": "All dropdowns & inputs visible"
+    },
+    {
+      "id": "CN008",
+      "scenario": "Submit without file",
+      "steps": "Submit empty Add Notes form",
+      "expected": "Error message shown"
+    },
+    {
+      "id": "CN009",
+      "scenario": "Valid Add Notes",
+      "steps": "Fill all fields & upload file",
+      "expected": "Notes added successfully"
+    },
+    {
+      "id": "CN010",
+      "scenario": "Add Notes responsive",
+      "steps": "Check Add Notes in mobile",
+      "expected": "Responsive layout"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "project": {
+    "name": "WEB APP",
+    "url": "https://test.wondigi.com/dashboard",
+    "executedBy": "Cypress Automation",
+    "build": "Build-01"
+  },
+  "module": "Dashboard",
+  "testcases": [
+    {
+      "id": "DB001",
+      "scenario": "Super Admin dashboard access",
+      "steps": "Login as Super Admin → Verify successful login → Navigate to Dashboard page",
+      "expected": "Dashboard loads successfully"
+    },
+    {
+      "id": "DB002",
+      "scenario": "Admin dashboard access",
+      "steps": "Login as Admin → Verify successful login → Navigate to Dashboard page",
+      "expected": "Dashboard loads successfully"
+    },
+    {
+      "id": "DB003",
+      "scenario": "Staff dashboard access",
+      "steps": "Login as Staff user → Verify successful login → Navigate to Dashboard page",
+      "expected": "Dashboard loads successfully"
+    },
+    {
+      "id": "DB004",
+      "scenario": "Student dashboard access",
+      "steps": "Login as Student user → Verify successful login → Navigate to Dashboard page",
+      "expected": "Dashboard loads successfully"
+    },
+    {
+      "id": "DB005",
+      "scenario": "Dashboard logo visibility",
+      "steps": "Navigate to Dashboard → Locate application logo → Verify logo is visible and properly aligned",
+      "expected": "Logo visible and aligned"
+    },
+    {
+      "id": "DB006",
+      "scenario": "Welcome message",
+      "steps": "Login to Dashboard → Observe welcome message → Verify correct user name is displayed",
+      "expected": "Correct user name displayed"
+    },
+    {
+      "id": "DB007",
+      "scenario": "Alerts icon",
+      "steps": "Navigate to Dashboard → Click on Alerts/Notifications icon → Observe alerts panel",
+      "expected": "Alerts panel opens"
+    },
+    {
+      "id": "DB008",
+      "scenario": "Logout",
+      "steps": "Navigate to Dashboard → Click on profile/logout option → Confirm logout action",
+      "expected": "Redirects to login page"
+    },
+    {
+      "id": "DB009",
+      "scenario": "Left navigation menu",
+      "steps": "Login to Dashboard → Observe left navigation menu → Verify all menu items are displayed",
+      "expected": "All menu items visible"
+    },
+    {
+      "id": "DB010",
+      "scenario": "Menu collapse/expand",
+      "steps": "Navigate to Dashboard → Click collapse icon → Verify menu collapses → Click expand icon → Verify menu expands",
+      "expected": "Menu toggles correctly"
+    },
+    {
+      "id": "DB011",
+      "scenario": "Student status pie chart",
+      "steps": "Navigate to Dashboard → Locate student status pie chart → Verify chart loads with data",
+      "expected": "Chart renders correctly"
+    },
+    {
+      "id": "DB012",
+      "scenario": "Staff status pie chart",
+      "steps": "Navigate to Dashboard → Locate staff status pie chart → Verify chart loads with data",
+      "expected": "Chart renders correctly"
+    },
+    {
+      "id": "DB013",
+      "scenario": "Attendance bar charts",
+      "steps": "Navigate to Dashboard → Locate attendance bar chart → Verify bars are displayed correctly",
+      "expected": "Bars displayed correctly"
+    },
+    {
+      "id": "DB014",
+      "scenario": "Subject score charts",
+      "steps": "Navigate to Dashboard → Locate subject score chart → Verify scores are displayed correctly",
+      "expected": "Scores displayed correctly"
+    },
+    {
+      "id": "DB015",
+      "scenario": "Profile → Settings navigation",
+      "steps": "Navigate to Dashboard → Click profile icon → Select Settings option",
+      "expected": "Settings page opens"
+    }
+  ]
+}

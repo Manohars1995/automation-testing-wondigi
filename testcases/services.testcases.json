@@ -1,0 +1,26 @@
+{
+  "project": {
+    "name": "WON DIGI – School Management System",
+    "url": "https://test.wondigi.com/servicesList",
+    "executedBy": "Cypress Automation",
+    "build": "Build-01"
+  },
+  "module": "Administration – Services",
+  "testcases": [
+    { "id": "ST001", "scenario": "Verify service status", "steps": "Observe status icon", "expected": "Green tick for active" },
+    { "id": "ST002", "scenario": "Make service inactive", "steps": "Click green tick → Make Inactive", "expected": "Status changes to inactive" },
+    { "id": "ST003", "scenario": "Cancel inactive", "steps": "Click green tick → Cancel", "expected": "Status remains active" },
+    { "id": "ST004", "scenario": "Export services", "steps": "Select checkbox → Export", "expected": "File exported" },
+    { "id": "ST005", "scenario": "Import services", "steps": "Import file", "expected": "File imported" },
+    { "id": "ST006", "scenario": "Download services", "steps": "Click Download", "expected": "File downloaded" },
+    { "id": "ST007", "scenario": "Valid search", "steps": "Search service name", "expected": "Results displayed" },
+    { "id": "ST008", "scenario": "Invalid search", "steps": "Search invalid name", "expected": "No records found" },
+    { "id": "ST009", "scenario": "Auto Service ID", "steps": "Click Add", "expected": "Service ID auto generated" },
+    { "id": "ST010", "scenario": "Create service", "steps": "Fill valid data", "expected": "Service created" },
+    { "id": "ST011", "scenario": "Empty form submit", "steps": "Submit empty", "expected": "Validation errors" },
+    { "id": "ST012", "scenario": "Invalid email", "steps": "Enter abc.com", "expected": "Email error shown" },
+    { "id": "ST013", "scenario": "Invalid contact", "steps": "Enter invalid number", "expected": "Contact error shown" },
+    { "id": "ST014", "scenario": "Mobile responsive", "steps": "Open in mobile", "expected": "UI responsive" },
+    { "id": "ST015", "scenario": "Tablet responsive", "steps": "Open in tablet", "expected": "UI responsive" }
+  ]
+}

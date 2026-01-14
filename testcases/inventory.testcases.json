@@ -1,0 +1,89 @@
+{
+  "project": {
+    "name": "WON Digi",
+    "url": "https://test.wondigi.com",
+    "executedBy": "Automation QA",
+    "build": "Inventory Module"
+  },
+  "module": "Inventory Module",
+  "testcases": [
+    {
+      "id": "IV001",
+      "scenario": "Verify inventory table headers",
+      "steps": "Open inventory page",
+      "expected": "All inventory columns visible"
+    },
+    {
+      "id": "IV002",
+      "scenario": "Verify search valid",
+      "steps": "Search with valid item name",
+      "expected": "Matching records shown"
+    },
+    {
+      "id": "IV003",
+      "scenario": "Verify search invalid",
+      "steps": "Search with invalid value",
+      "expected": "No records found"
+    },
+    {
+      "id": "IV004",
+      "scenario": "Verify import option",
+      "steps": "Click three dots → Import",
+      "expected": "Import popup visible"
+    },
+    {
+      "id": "IV005",
+      "scenario": "Verify export option",
+      "steps": "Click three dots → Export",
+      "expected": "File exported"
+    },
+    {
+      "id": "IV006",
+      "scenario": "Verify download option",
+      "steps": "Click three dots → Download",
+      "expected": "File downloaded"
+    },
+    {
+      "id": "IV007",
+      "scenario": "Verify Add Inventory page fields",
+      "steps": "Click +Add",
+      "expected": "All fields visible"
+    },
+    {
+      "id": "IV008",
+      "scenario": "Verify auto generated item id",
+      "steps": "Open create inventory page",
+      "expected": "Item ID auto generated"
+    },
+    {
+      "id": "IV009",
+      "scenario": "Create inventory with valid data",
+      "steps": "Fill all fields and submit",
+      "expected": "Inventory record created"
+    },
+    {
+      "id": "IV010",
+      "scenario": "Verify empty submit validation",
+      "steps": "Click Add without data",
+      "expected": "Validation errors shown"
+    },
+    {
+      "id": "IV011",
+      "scenario": "Verify invalid email validation",
+      "steps": "Enter invalid email",
+      "expected": "Email validation error"
+    },
+    {
+      "id": "IV012",
+      "scenario": "Verify mobile responsive",
+      "steps": "Change viewport to mobile",
+      "expected": "UI responsive"
+    },
+    {
+      "id": "IV013",
+      "scenario": "Verify tablet responsive",
+      "steps": "Change viewport to tablet",
+      "expected": "UI responsive"
+    }
+  ]
+}

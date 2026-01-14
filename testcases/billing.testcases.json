@@ -1,0 +1,95 @@
+{
+  "project": {
+    "name": "WON DIGI – School Management System",
+    "url": "https://test.wondigi.com/feeTable",
+    "executedBy": "Cypress Automation",
+    "build": "Build-01"
+  },
+  "module": "Billing – Fee Transactions",
+  "testcases": [
+    {
+      "id": "BL001",
+      "scenario": "Verify Fee Transactions table headers",
+      "steps": "Open Fee Transactions page",
+      "expected": "Id, Name, Class, Fee Type, Total Fee, Fee Paid, Due, Payment columns are displayed"
+    },
+    {
+      "id": "BL002",
+      "scenario": "Verify payment download icon",
+      "steps": "Click download icon in Payment column",
+      "expected": "Receipt file is downloaded automatically"
+    },
+    {
+      "id": "BL003",
+      "scenario": "Verify payment disabled icon",
+      "steps": "Check payment icon for unpaid record",
+      "expected": "Payment icon is disabled"
+    },
+    {
+      "id": "BL004",
+      "scenario": "Search fee record with valid name",
+      "steps": "Search with name Kayal",
+      "expected": "Matching billing records are displayed"
+    },
+    {
+      "id": "BL005",
+      "scenario": "Search fee record with invalid name",
+      "steps": "Search with invalid name ABCD",
+      "expected": "No records found message is displayed"
+    },
+    {
+      "id": "BL006",
+      "scenario": "Verify Import option",
+      "steps": "Click three dots → Import",
+      "expected": "Import option is clickable"
+    },
+    {
+      "id": "BL007",
+      "scenario": "Verify Export option",
+      "steps": "Click three dots → Export",
+      "expected": "Export file is downloaded"
+    },
+    {
+      "id": "BL008",
+      "scenario": "Verify Download option",
+      "steps": "Click three dots → Download",
+      "expected": "Fee data file is downloaded"
+    },
+    {
+      "id": "BL009",
+      "scenario": "Open billing detail view",
+      "steps": "Click on record with User ID ST000001",
+      "expected": "Billing details page opens"
+    },
+    {
+      "id": "BL010",
+      "scenario": "Verify billing details auto loaded",
+      "steps": "Wait for data fetch",
+      "expected": "User name, due date and billing table are auto populated"
+    },
+    {
+      "id": "BL011",
+      "scenario": "Verify total bill calculation",
+      "steps": "Observe total bill amount",
+      "expected": "Total bill amount is calculated correctly"
+    },
+    {
+      "id": "BL012",
+      "scenario": "Verify SEND button availability",
+      "steps": "Scroll billing detail page",
+      "expected": "SEND button is visible and enabled"
+    },
+    {
+      "id": "BL013",
+      "scenario": "Verify Billing module mobile responsiveness",
+      "steps": "Open billing page in mobile resolution",
+      "expected": "Billing UI adapts correctly to mobile"
+    },
+    {
+      "id": "BL014",
+      "scenario": "Verify Billing module tablet responsiveness",
+      "steps": "Open billing page in tablet resolution",
+      "expected": "Billing UI adapts correctly to tablet"
+    }
+  ]
+}

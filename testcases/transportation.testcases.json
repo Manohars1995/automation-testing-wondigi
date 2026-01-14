@@ -1,0 +1,59 @@
+{
+  "project": {
+    "name": "WON Digi",
+    "url": "https://test.wondigi.com",
+    "executedBy": "QA Automation",
+    "build": "Transportation Module"
+  },
+  "module": "Transportation",
+  "testcases": [
+    { "id": "TR001", "scenario": "Verify route list fields", "steps": "Open bus route list page", "expected": "Route ID, Name, Bus Number, Driver, Contact, Stops, Status displayed" },
+
+    { "id": "TT002", "scenario": "Verify travellers list fields", "steps": "Open transport list page", "expected": "User ID, Name, Pick, Bus No, Fee, Paid, Due, Contact, Status displayed" },
+
+    { "id": "TR003", "scenario": "Verify route import", "steps": "Click three dots → Import", "expected": "Import option should work" },
+    { "id": "TR004", "scenario": "Verify route export", "steps": "Click three dots → Export", "expected": "Export option should work" },
+    { "id": "TR005", "scenario": "Verify route download", "steps": "Click three dots → Download", "expected": "Download should work" },
+
+    { "id": "TT006", "scenario": "Verify traveller import", "steps": "Click three dots → Import", "expected": "Import option should work" },
+    { "id": "TT007", "scenario": "Verify traveller export", "steps": "Click three dots → Export", "expected": "Export option should work" },
+    { "id": "TT008", "scenario": "Verify traveller download", "steps": "Click three dots → Download", "expected": "Download should work" },
+
+    { "id": "TR009", "scenario": "Route search valid data", "steps": "Search Benz Circle", "expected": "Matching route displayed" },
+    { "id": "TR010", "scenario": "Route search invalid data", "steps": "Search invalid text", "expected": "No records found message" },
+
+    { "id": "TT011", "scenario": "Traveller search valid data", "steps": "Search Kayal", "expected": "Matching traveller displayed" },
+    { "id": "TT012", "scenario": "Traveller search invalid data", "steps": "Search invalid name", "expected": "No records found message" },
+
+    { "id": "TR013", "scenario": "Open create route form", "steps": "Click +Add in routes", "expected": "All route fields displayed" },
+    { "id": "TT014", "scenario": "Open create transport form", "steps": "Click +Add in travellers", "expected": "All transport fields displayed" },
+
+    { "id": "TR015", "scenario": "Create route with valid data", "steps": "Fill all fields and submit", "expected": "Route created successfully" },
+    { "id": "TT016", "scenario": "Create traveller with valid data", "steps": "Fill all fields and submit", "expected": "Traveller created successfully" },
+
+    { "id": "TR017", "scenario": "Create route with mandatory fields", "steps": "Fill * fields only", "expected": "Route created successfully" },
+    { "id": "TT018", "scenario": "Create traveller with mandatory fields", "steps": "Fill * fields only", "expected": "Traveller created successfully" },
+
+    { "id": "TR019", "scenario": "Route partial fields validation", "steps": "Leave some fields empty", "expected": "Validation error shown" },
+    { "id": "TR020", "scenario": "Route partial fields validation", "steps": "Leave title empty", "expected": "Validation error shown" },
+    { "id": "TR021", "scenario": "Route partial fields validation", "steps": "Leave contact empty", "expected": "Validation error shown" },
+
+    { "id": "TT022", "scenario": "Traveller partial fields validation", "steps": "Leave pickup route empty", "expected": "Validation error shown" },
+    { "id": "TT023", "scenario": "Traveller partial fields validation", "steps": "Leave pickup driver empty", "expected": "Validation error shown" },
+    { "id": "TT024", "scenario": "Traveller partial fields validation", "steps": "Leave pickup time empty", "expected": "Validation error shown" },
+
+    { "id": "TR025", "scenario": "Route empty form submit", "steps": "Submit empty form", "expected": "Validation errors displayed" },
+    { "id": "TT026", "scenario": "Traveller empty form submit", "steps": "Submit empty form", "expected": "Validation errors displayed" },
+
+    { "id": "TR027", "scenario": "Route invalid contact", "steps": "Enter invalid phone number", "expected": "Invalid contact error shown" },
+    { "id": "TR028", "scenario": "Route invalid bus number", "steps": "Enter alphabets in bus number", "expected": "Invalid bus number error" },
+    { "id": "TR029", "scenario": "Route invalid stop address", "steps": "Enter invalid address", "expected": "Address validation error" },
+
+    { "id": "TT030", "scenario": "Traveller invalid contact", "steps": "Enter invalid contact number", "expected": "Invalid contact error" },
+    { "id": "TT031", "scenario": "Traveller invalid fee", "steps": "Enter negative fee", "expected": "Invalid fee error" },
+
+    { "id": "TR032", "scenario": "Route mobile responsiveness", "steps": "Open routes in mobile view", "expected": "UI responsive" },
+    { "id": "TR033", "scenario": "Route tablet responsiveness", "steps": "Open routes in tablet view", "expected": "UI responsive" },
+    { "id": "TT034", "scenario": "Traveller responsive check", "steps": "Open traveller pages in mobile & tablet", "expected": "UI responsive" }
+  ]
+}

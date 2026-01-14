@@ -1,0 +1,71 @@
+{
+  "project": {
+    "name": "WON DIGI – School Management System",
+    "url": "https://test.wondigi.com/queriesList",
+    "executedBy": "Cypress Automation",
+    "build": "Build-01"
+  },
+  "module": "Administration – Enquiry",
+  "testcases": [
+    {
+      "id": "EN001",
+      "scenario": "Verify Enquiry ID column",
+      "steps": "Open Enquiry list",
+      "expected": "Enquiry ID column is displayed"
+    },
+    {
+      "id": "EN002",
+      "scenario": "Verify User ID column",
+      "steps": "Open Enquiry list",
+      "expected": "User ID column is displayed"
+    },
+    {
+      "id": "EN003",
+      "scenario": "Verify Name column",
+      "steps": "Open Enquiry list",
+      "expected": "Name column is displayed"
+    },
+    {
+      "id": "EN004",
+      "scenario": "Verify Title column",
+      "steps": "Open Enquiry list",
+      "expected": "Title column is displayed"
+    },
+    {
+      "id": "EN005",
+      "scenario": "Verify Enquiry Status column",
+      "steps": "Open Enquiry list",
+      "expected": "Enquiry Status column is displayed"
+    },
+    {
+      "id": "EN006",
+      "scenario": "Search enquiry with valid name",
+      "steps": "Enter valid name in search",
+      "expected": "Matching enquiry records displayed"
+    },
+    {
+      "id": "EN007",
+      "scenario": "Search enquiry with invalid name",
+      "steps": "Enter invalid name in search",
+      "expected": "No records found message displayed"
+    },
+    {
+      "id": "EN008",
+      "scenario": "Import enquiries",
+      "steps": "Click ⋮ → Import",
+      "expected": "Import option is visible"
+    },
+    {
+      "id": "EN009",
+      "scenario": "Export enquiries",
+      "steps": "Click ⋮ → Export",
+      "expected": "Export option is visible"
+    },
+    {
+      "id": "EN010",
+      "scenario": "Download enquiries",
+      "steps": "Click ⋮ → Download",
+      "expected": "Download option is visible"
+    }
+  ]
+}

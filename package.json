@@ -1,0 +1,37 @@
+{
+  "name": "wondigi-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "cypress run",
+    "test:book-demo": "cypress run --spec cypress/e2e/book-demo/bookDemo.cy.js",
+    "test:login": "cypress run --spec cypress/e2e/login/login.cy.js",
+    "test:dashboard": "cypress run --spec cypress/e2e/dashboard/dashboard.cy.js",
+    "test:staff": "cypress run --spec cypress/e2e/attendance/staff.cy.js",
+    "test:students": "cypress run --spec cypress/e2e/students/students.cy.js",
+    "test:roles": "cypress run --browser chrome --spec cypress/e2e/roles/roles.cy.js",
+    "test:services": "cypress run --browser chrome --spec cypress/e2e/services/services.cy.js",
+    "test:department": "cypress run --browser chrome --spec cypress/e2e/department/department.cy.js",
+    "test:timetable": "cypress run --browser chrome --spec cypress/e2e/timetable/timetable.cy.js",
+    "test:enquiry": "cypress run --browser chrome --spec cypress/e2e/enquiry/enquiry.cy.js",
+    "test:billing": "cypress run --browser chrome --spec cypress/e2e/billing/billing.cy.js",
+    "test:academics": "cypress run --browser chrome --spec cypress/e2e/academics/academics.cy.js",
+      "test:diary": "cypress run --browser chrome --spec cypress/e2e/academics/diary.cy.js",
+    "test:assignments": "cypress run --browser chrome --spec cypress/e2e/academics/assignments.cy.js",
+    "test:classnotes": "cypress run --browser chrome --spec cypress/e2e/academics/classnotes.cy.js",
+    "test:results": "cypress run --browser chrome --spec cypress/e2e/academics/results.cy.js",
+    "test:examinations": "cypress run --browser chrome --spec cypress/e2e/academics/examinations.cy.js",
+    "test:circulars": "cypress run --browser chrome --spec cypress/e2e/circulars/circulars.cy.js",
+    "test:transportation": "cypress run --browser chrome --spec cypress/e2e/transportation/transportation.cy.js",
+    "test:library": "cypress run --browser chrome --spec cypress/e2e/library/library.cy.js",
+    "test:inventory": "cypress run --browser chrome --spec cypress/e2e/inventory/inventory.cy.js",
+    "test:care": "cypress run --browser chrome --spec cypress/e2e/care/care.cy.js",
+    "test:calendar": "cypress run --browser chrome --spec cypress/e2e/calendar/calendar.cy.js",
+    "test:settings": "cypress run --browser chrome --spec cypress/e2e/settings/settings.cy.js"
+  },
+  "devDependencies": {
+    "cypress": "^15.8.1",
+    "exceljs": "^4.4.0"
+  }
+}

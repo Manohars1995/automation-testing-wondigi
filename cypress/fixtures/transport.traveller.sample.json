@@ -1,0 +1,19 @@
+{
+  "pickupRoute": "Benz Circle",
+  "dropRoute": "Kanuru",
+  "pickupPoint": "Benz Circle",
+  "dropPoint": "Kanuru",
+  "pickupBus": "1111",
+  "dropBus": "1111",
+  "pickupDriver": "Manohar",
+  "pickupContact": "9515310258",
+  "pickupTime": "10:30",
+  "dropTime": "11:30",
+  "service": "Public",
+  "startDate": "26-12-2025",
+  "endDate": "26-12-2025",
+  "busFee": "100.00",
+  "paid": "60.00",
+  "due": "40.00",
+  "status": "Active"
+}

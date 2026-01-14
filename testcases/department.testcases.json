@@ -1,0 +1,89 @@
+{
+  "project": {
+    "name": "WON DIGI – School Management System",
+    "url": "https://test.wondigi.com/departmentList",
+    "executedBy": "Cypress Automation",
+    "build": "Build-01"
+  },
+  "module": "Administration – Department",
+  "testcases": [
+    {
+      "id": "DP001",
+      "scenario": "Verify department table headers",
+      "steps": "Navigate to Department List page",
+      "expected": "Id, Name, Staff Id, Staff Name, Dept Status columns displayed"
+    },
+    {
+      "id": "DP002",
+      "scenario": "Verify department active status icon",
+      "steps": "Observe Dept Status column",
+      "expected": "Active department shown with green tick"
+    },
+    {
+      "id": "DP003",
+      "scenario": "Export departments",
+      "steps": "Click three dots → Export",
+      "expected": "Department data exported successfully"
+    },
+    {
+      "id": "DP004",
+      "scenario": "Import departments",
+      "steps": "Click three dots → Import",
+      "expected": "Department import option available"
+    },
+    {
+      "id": "DP005",
+      "scenario": "Download departments",
+      "steps": "Click three dots → Download",
+      "expected": "Department list downloaded"
+    },
+    {
+      "id": "DP006",
+      "scenario": "Search valid department name",
+      "steps": "Search Telugu",
+      "expected": "Telugu department displayed"
+    },
+    {
+      "id": "DP007",
+      "scenario": "Search invalid department name",
+      "steps": "Search Java",
+      "expected": "No data found message displayed"
+    },
+    {
+      "id": "DP008",
+      "scenario": "Auto generate Department ID",
+      "steps": "Click Add Department",
+      "expected": "Department ID auto generated"
+    },
+    {
+      "id": "DP009",
+      "scenario": "Auto generate Staff ID and Staff Name",
+      "steps": "Click Staff Id field",
+      "expected": "Staff Id and Staff Name auto populated"
+    },
+    {
+      "id": "DP010",
+      "scenario": "Create department with valid data",
+      "steps": "Fill all fields → Save",
+      "expected": "Department created successfully"
+    },
+    {
+      "id": "DP011",
+      "scenario": "Submit empty department form",
+      "steps": "Click Save without entering data",
+      "expected": "Validation errors displayed"
+    },
+    {
+      "id": "DP012",
+      "scenario": "Partial data validation",
+      "steps": "Enter name only → Save",
+      "expected": "Required field errors displayed"
+    },
+    {
+      "id": "DP013",
+      "scenario": "Responsive UI check",
+      "steps": "Open in mobile & tablet view",
+      "expected": "Department module responsive"
+    }
+  ]
+}

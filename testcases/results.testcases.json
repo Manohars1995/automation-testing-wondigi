@@ -1,0 +1,24 @@
+{
+  "project": {
+    "name": "WON DIGI",
+    "url": "https://test.wondigi.com",
+    "executedBy": "Automation",
+    "build": "Results Module"
+  },
+  "module": "Results",
+  "testcases": [
+    { "id": "RS001", "scenario": "Verify table headers", "steps": "Check all result columns", "expected": "All headers visible" },
+    { "id": "RS002", "scenario": "Verify result list", "steps": "Check records available", "expected": "Records displayed" },
+    { "id": "RS003", "scenario": "Valid search", "steps": "Search by student name", "expected": "Matching record shown" },
+    { "id": "RS004", "scenario": "Invalid search", "steps": "Search random text", "expected": "No records found" },
+    { "id": "RS005", "scenario": "Filter by class & section", "steps": "Select Grade 1 & A", "expected": "Filtered records shown" },
+    { "id": "RS006", "scenario": "Add result form", "steps": "Click +ADD", "expected": "All fields visible" },
+    { "id": "RS007", "scenario": "Class selection", "steps": "Select Grade 1", "expected": "Students loaded" },
+    { "id": "RS008", "scenario": "Section selection", "steps": "Select A", "expected": "Students filtered" },
+    { "id": "RS009", "scenario": "Subject selection", "steps": "Select subject", "expected": "Subject applied" },
+    { "id": "RS010", "scenario": "Examination selection", "steps": "Select exam", "expected": "Exam applied" },
+    { "id": "RS011", "scenario": "Save result", "steps": "Enter marks & save", "expected": "Result saved" },
+    { "id": "RS012", "scenario": "Mobile responsive", "steps": "Open in mobile view", "expected": "Responsive layout" },
+    { "id": "RS013", "scenario": "Tablet responsive", "steps": "Open in tablet view", "expected": "Responsive layout" }
+  ]
+}

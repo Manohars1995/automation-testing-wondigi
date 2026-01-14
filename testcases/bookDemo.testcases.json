@@ -1,0 +1,114 @@
+{
+  "project": {
+    "name": "WEB APP",
+    "round": "WON DIGI Round 1",
+    "url": "https://test.wondigi.com",
+    "executedBy": "Manohar Srungaram",
+    "build": "Build-01"
+  },
+  "module": "Book A Demo Page",
+  "testcases": [
+    {
+      "id": "BD001",
+      "scenario": "Open Book Demo Popup From Header",
+      "steps": "1. Open WON DIGI home page.\n2. Click BOOK DEMO button on header.",
+      "expected": "Book Demo popup is displayed with all input fields (Name, Contact, Email, Organization, Time To Contact, Description) and Request Demo button."
+    },
+    {
+      "id": "BD002",
+      "scenario": "Close popup using X icon",
+      "steps": "1. Open Book Demo popup.\n2. Click X icon on top-right of popup.",
+      "expected": "Popup is closed and user returns to home page without UI issues."
+    },
+    {
+      "id": "BD003",
+      "scenario": "Submit with all fields empty",
+      "steps": "1. Open Book Demo popup.\n2. Click Request Demo without entering any data.",
+      "expected": "Form is not submitted. Validation messages are shown for all mandatory fields."
+    },
+    {
+      "id": "BD004",
+      "scenario": "Successful submission with valid data",
+      "steps": "1. Open Book Demo popup.\n2. Enter valid Name, Contact (10 digits with +91), Email, Organization Name, Time To Contact, Description.\n3. Click Request Demo.",
+      "expected": "Request is submitted successfully and success / thank-you message is displayed."
+    },
+    {
+      "id": "BD005",
+      "scenario": "Invalid Email Format validation",
+      "steps": "1. Open Book Demo popup.\n2. Enter invalid email format (e.g. usergmail.com).\n3. Fill remaining fields with valid data.\n4. Click Request Demo.",
+      "expected": "Email validation error message is displayed and form is not submitted."
+    },
+    {
+      "id": "BD006",
+      "scenario": "Invalid Mobile Number Length",
+      "steps": "1. Open Book Demo popup.\n2. Enter contact number less than 10 digits.\n3. Fill remaining fields with valid data.\n4. Click Request Demo.",
+      "expected": "Contact number validation error is shown and form is not submitted."
+    },
+    {
+      "id": "BD007",
+      "scenario": "Contact field accepts only numbers",
+      "steps": "1. Open Book Demo popup.\n2. Try entering alphabets and special characters in Contact field.\n3. Submit the form.",
+      "expected": "Contact field should not accept non-numeric characters or should show validation error."
+    },
+    {
+      "id": "BD008",
+      "scenario": "Time selection using time picker",
+      "steps": "1. Open Book Demo popup.\n2. Click on Time To Contact field.\n3. Select a valid time (e.g. 15:30).",
+      "expected": "Selected time is displayed correctly in HH:MM format."
+    },
+    {
+      "id": "BD009",
+      "scenario": "Mandatory Organization Name field validation",
+      "steps": "1. Open Book Demo popup.\n2. Leave Organization Name field empty.\n3. Fill remaining fields with valid data.\n4. Click Request Demo.",
+      "expected": "Validation error message is shown for Organization Name and form is not submitted."
+    },
+    {
+      "id": "BD010",
+      "scenario": "UI responsiveness of popup",
+      "steps": "1. Open Book Demo popup.\n2. Resize browser window to desktop, tablet and mobile resolutions.",
+      "expected": "Popup remains usable, no UI break, all fields and buttons are visible with scrolling if required."
+    },
+    {
+      "id": "BD011",
+      "scenario": "Close popup by clicking outside overlay",
+      "steps": "1. Open Book Demo popup.\n2. Click on dim background area outside the popup.",
+      "expected": "Popup closes (if supported) and home page is usable."
+    },
+    {
+      "id": "BD012",
+      "scenario": "Name field minimum & valid characters",
+      "steps": "1. Open Book Demo popup.\n2. Enter short alphabetic name (e.g. Ravi).\n3. Fill remaining fields with valid data.\n4. Submit the form.",
+      "expected": "Name is accepted, no validation error, and form submits successfully."
+    },
+    {
+      "id": "BD013",
+      "scenario": "Description field mandatory validation",
+      "steps": "1. Open Book Demo popup.\n2. Leave Description field empty.\n3. Fill remaining fields with valid data.\n4. Click Request Demo.",
+      "expected": "Validation error message is displayed for Description field and form is not submitted."
+    },
+    {
+      "id": "BD014",
+      "scenario": "Change country code in Contact field",
+      "steps": "1. Open Book Demo popup.\n2. Change country code from default to +1 (USA).\n3. Enter valid local number.\n4. Fill remaining fields and submit.",
+      "expected": "Selected country code is applied and form is submitted successfully."
+    },
+    {
+      "id": "BD015",
+      "scenario": "Multiple click protection on Request Demo",
+      "steps": "1. Open Book Demo popup.\n2. Fill all fields with valid data.\n3. Rapidly click Request Demo button multiple times.",
+      "expected": "Only one request is processed. Button is disabled or shows loading until response."
+    },
+    {
+      "id": "BD016",
+      "scenario": "Keyboard navigation and accessibility",
+      "steps": "1. Open Book Demo popup.\n2. Use Tab key to navigate through all input fields.\n3. Submit form using keyboard.",
+      "expected": "Focus moves in logical order and user can submit form without mouse."
+    },
+    {
+      "id": "BD017",
+      "scenario": "Desktop responsiveness",
+      "steps": "1. Open Book Demo popup.\n2. View popup on desktop resolution (e.g. 1280x800).",
+      "expected": "Popup fits correctly on screen, no horizontal scroll, and Request Demo button is accessible."
+    }
+  ]
+}

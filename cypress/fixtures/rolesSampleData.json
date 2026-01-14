@@ -1,0 +1,28 @@
+{
+  "roleName": "Doctor",
+  "statusActive": "Active",
+  "statusInactive": "Inactive",
+  "description": "Hi",
+  "longDescription": "Lorem ipsum dolor sit amet, consectetur",
+  "components": [
+    "Dashboard",
+    "Students",
+    "Time Table",
+    "Attendance",
+    "Assignments",
+    "Exams",
+    "Circulars",
+    "Library",
+    "Care",
+    "Settings",
+    "Staff",
+    "Department",
+    "Billing",
+    "Diary",
+    "Classnotes",
+    "Results",
+    "Transportation",
+    "Inventory",
+    "Calendar"
+  ]
+}

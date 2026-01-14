@@ -1,0 +1,21 @@
+{
+  "employeeName": "Manohar",
+  "gender": "Male",
+  "dob": "1995-11-16",
+  "contact": "9515310258",
+  "email": "manohar142652@gmail.com",
+  "statusActive": "Active",
+  "statusInactive": "Inactive",
+  "nationality": "India",
+  "state": "Andhra Pradesh",
+  "city": "Vijayawada",
+  "doorNo": "11111",
+  "street": "ABC STREET",
+  "pincode": "520007",
+  "jobTitle": "Teacher",
+  "department": "English",
+  "class": "Grade 1",
+  "section": "A",
+  "medical": "YES",
+  "product": "SV00001"
+}

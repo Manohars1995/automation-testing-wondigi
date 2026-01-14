@@ -1,0 +1,14 @@
+{
+  "itemName": "Books",
+  "category": "Stationery",
+  "unitPrice": "100",
+  "quantity": "1",
+  "restockPoint": "1",
+  "brand": "Good",
+  "supplierName": "Manohar",
+  "supplierContact": "9515310258",
+  "supplierEmail": "manohar142652@gmail.com",
+  "place": "Vijayawada",
+  "status": "Active",
+  "description": "Hi"
+}

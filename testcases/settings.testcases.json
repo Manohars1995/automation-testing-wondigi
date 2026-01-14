@@ -1,0 +1,46 @@
+{
+  "project": {
+    "name": "WON Digi",
+    "url": "https://test.wondigi.com",
+    "executedBy": "QA Automation",
+    "build": "Settings Module"
+  },
+  "module": "Settings",
+  "testcases": [
+    { "id": "ST001", "scenario": "Open Settings page", "steps": "Click Settings from sidebar", "expected": "Settings page should load successfully" },
+
+    { "id": "ST002", "scenario": "Verify Settings sections", "steps": "Observe Settings page", "expected": "My Profile, KYC, Templates, Change Password, FAQs, Contact Us, Invite sections displayed" },
+
+    { "id": "ST003", "scenario": "Expand My Profile section", "steps": "Click My Profile accordion", "expected": "My Profile form should expand" },
+    { "id": "ST004", "scenario": "Verify My Profile fields", "steps": "Check profile form fields", "expected": "Name, Email, DOB, Gender, Contact, Address fields displayed" },
+    { "id": "ST005", "scenario": "Edit profile details", "steps": "Update profile fields and click Save", "expected": "Profile updated successfully" },
+    { "id": "ST006", "scenario": "Delete profile option", "steps": "Click Delete button", "expected": "Delete confirmation should appear" },
+
+    { "id": "ST007", "scenario": "Expand KYC section", "steps": "Click KYC accordion", "expected": "KYC form should expand" },
+    { "id": "ST008", "scenario": "Verify KYC fields", "steps": "Check KYC form", "expected": "Account Holder Name, Account Number, IFSC, Tax Number fields displayed" },
+    { "id": "ST009", "scenario": "Update KYC details", "steps": "Fill KYC form and click Update", "expected": "KYC details updated successfully" },
+    { "id": "ST010", "scenario": "Submit empty KYC form", "steps": "Click Update without entering data", "expected": "Validation errors displayed" },
+
+    { "id": "ST011", "scenario": "Expand Templates section", "steps": "Click Templates accordion", "expected": "Templates section should expand" },
+    { "id": "ST012", "scenario": "Verify Invoice templates", "steps": "View Invoice templates", "expected": "Invoice templates displayed" },
+    { "id": "ST013", "scenario": "Verify TC templates", "steps": "Switch to TC tab", "expected": "TC templates displayed" },
+    { "id": "ST014", "scenario": "Verify Conduct templates", "steps": "Switch to Conduct tab", "expected": "Conduct templates displayed" },
+    { "id": "ST015", "scenario": "Verify Score Card templates", "steps": "Switch to Score Card tab", "expected": "Score Card templates displayed" },
+
+    { "id": "ST016", "scenario": "Expand Change Password section", "steps": "Click Change Password accordion", "expected": "Change Password section expanded" },
+    { "id": "ST017", "scenario": "Verify Change Password button", "steps": "Check Change Password button", "expected": "Change Password button visible" },
+
+    { "id": "ST018", "scenario": "Expand FAQs section", "steps": "Click FAQs accordion", "expected": "FAQs cards displayed" },
+    { "id": "ST019", "scenario": "Navigate FAQ carousel", "steps": "Click next/previous arrows", "expected": "FAQ cards should slide properly" },
+
+    { "id": "ST020", "scenario": "Expand Contact Us section", "steps": "Click Contact Us accordion", "expected": "Contact email displayed" },
+
+    { "id": "ST021", "scenario": "Expand Invite section", "steps": "Click Invite accordion", "expected": "Invite email input and button displayed" },
+    { "id": "ST022", "scenario": "Invite with valid email", "steps": "Enter valid email and click Invite", "expected": "Invite sent successfully" },
+    { "id": "ST023", "scenario": "Invite with invalid email", "steps": "Enter invalid email and click Invite", "expected": "Invalid email validation error shown" },
+    { "id": "ST024", "scenario": "Invite empty email", "steps": "Click Invite without email", "expected": "Validation error shown" },
+
+    { "id": "ST025", "scenario": "Settings mobile responsiveness", "steps": "Open Settings page in mobile view", "expected": "UI should be responsive" },
+    { "id": "ST026", "scenario": "Settings tablet responsiveness", "steps": "Open Settings page in tablet view", "expected": "UI should be responsive" }
+  ]
+}

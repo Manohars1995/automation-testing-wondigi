@@ -1,0 +1,42 @@
+{
+  "results": {
+    "search": {
+      "valid": {
+        "input": "Kayal",
+        "expected": "Kayal"
+      },
+      "invalid": {
+        "input": "RandomXYZ",
+        "expected": "No Records Found"
+      }
+    },
+
+    "filters": {
+      "class": "Grade 1",
+      "section": "A"
+    },
+
+    "addResult": {
+      "class": "Grade 1",
+      "section": "A",
+      "subject": "Telugu",
+      "examination": "Half yearly",
+      "marks": "75",
+      "grade": "A",
+      "remarks": "Good"
+    },
+
+    "responsive": {
+      "mobile": {
+        "device": "iphone-x",
+        "width": 375,
+        "height": 812
+      },
+      "tablet": {
+        "device": "ipad-2",
+        "width": 768,
+        "height": 1024
+      }
+    }
+  }
+}

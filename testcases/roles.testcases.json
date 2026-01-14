@@ -1,0 +1,35 @@
+{
+  "project": {
+    "name": "WON DIGI – School Management System",
+    "url": "https://test.wondigi.com/rolesList",
+    "executedBy": "Cypress Automation",
+    "build": "Build-01"
+  },
+  "module": "Administration – Roles",
+  "testcases": [
+    { "id": "RL001", "scenario": "Verify roles table headers", "steps": "Open Roles list page", "expected": "Role Id, Role Name, Description, Count, Role Status headers are visible" },
+    { "id": "RL002", "scenario": "Verify role active status", "steps": "Observe role status icon", "expected": "Active roles show green tick icon" },
+
+    { "id": "RL003", "scenario": "Search role with valid name", "steps": "Search role name Doctor", "expected": "Matching role records displayed" },
+    { "id": "RL004", "scenario": "Search role with invalid name", "steps": "Search invalid role", "expected": "No records found displayed" },
+
+    { "id": "RL005", "scenario": "Export selected roles", "steps": "Select checkbox → Export", "expected": "Roles exported successfully" },
+    { "id": "RL006", "scenario": "Import roles", "steps": "Click Import option", "expected": "Import popup displayed" },
+    { "id": "RL007", "scenario": "Download roles list", "steps": "Click Download", "expected": "Roles list downloaded" },
+
+    { "id": "RL008", "scenario": "Verify auto-generated Role ID", "steps": "Click Add Role", "expected": "Role ID auto-generated" },
+    { "id": "RL009", "scenario": "Create role with Active status", "steps": "Fill role name, description, status Active", "expected": "Role created successfully" },
+    { "id": "RL010", "scenario": "Create role with Inactive status", "steps": "Fill role name, description, status Inactive", "expected": "Inactive role created successfully" },
+
+    { "id": "RL011", "scenario": "Description length validation", "steps": "Enter >100 characters description", "expected": "Validation error message displayed" },
+
+    { "id": "RL012", "scenario": "Create role with Hide permissions", "steps": "Select Hide for all components", "expected": "Role created with Hide permissions" },
+    { "id": "RL013", "scenario": "Create role with Read permissions", "steps": "Select Read for all components", "expected": "Role created with Read permissions" },
+    { "id": "RL014", "scenario": "Create role with Edit permissions", "steps": "Select Edit for all components", "expected": "Role created with Edit permissions" },
+    { "id": "RL015", "scenario": "Mixed permissions validation", "steps": "Select different permissions", "expected": "Permissions saved correctly" },
+
+    { "id": "RL016", "scenario": "Submit empty form", "steps": "Click Save without data", "expected": "Required field validation errors displayed" },
+
+    { "id": "RL017", "scenario": "Responsive UI check", "steps": "Open Roles in mobile, tablet, desktop", "expected": "Roles module responsive on all devices" }
+  ]
+}

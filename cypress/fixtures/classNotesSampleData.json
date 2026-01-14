@@ -1,0 +1,59 @@
+{
+  "classNotes": {
+    "validSelection": {
+      "class": "Grade 1",
+      "section": "A",
+      "subject": "English",
+      "fileName": "English"
+    },
+
+    "icons": [
+      {
+        "name": "PDF Maker",
+        "visible": true
+      },
+      {
+        "name": "Demo",
+        "visible": true
+      },
+      {
+        "name": "Okok",
+        "visible": true
+      }
+    ],
+
+    "search": {
+      "valid": {
+        "input": "PDF Maker",
+        "expectedResult": "Record displayed"
+      },
+      "invalid": {
+        "input": "RandomText123",
+        "expectedResult": "No records found"
+      }
+    },
+
+    "errors": {
+      "emptySubmit": "Please upload file",
+      "requiredFields": "This field is required"
+    },
+
+    "responsive": {
+      "mobile": {
+        "device": "iphone-x",
+        "width": 375,
+        "height": 812
+      },
+      "tablet": {
+        "device": "ipad-2",
+        "width": 768,
+        "height": 1024
+      }
+    },
+
+    "files": {
+      "validPdf": "sample.pdf",
+      "invalidFile": "sample.exe"
+    }
+  }
+}

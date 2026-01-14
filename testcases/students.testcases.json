@@ -1,0 +1,149 @@
+{
+  "project": {
+    "name": "WON DIGI – School Management System",
+    "url": "https://test.wondigi.com/studentsList",
+    "executedBy": "Cypress Automation",
+    "build": "Build-01"
+  },
+  "module": "Administration – Students",
+  "testcases": [
+    {
+      "id": "ST001",
+      "scenario": "Verify student active status (Green Tick)",
+      "steps": "Navigate to Students List → Observe In School column for active student",
+      "expected": "Student active status is displayed with green tick icon"
+    },
+    {
+      "id": "ST002",
+      "scenario": "Deactivate student using status icon",
+      "steps": "Click green tick icon → Confirmation popup → Click Mark Inactive",
+      "expected": "Student status changes from active to inactive (red X)"
+    },
+    {
+      "id": "ST003",
+      "scenario": "Cancel student deactivation",
+      "steps": "Click green tick icon → Confirmation popup → Click Cancel",
+      "expected": "Student status remains active with green tick"
+    },
+    {
+      "id": "ST004",
+      "scenario": "Search student with valid name",
+      "steps": "Enter valid student name (Kayal) in search field",
+      "expected": "Matching student records are displayed in the list"
+    },
+    {
+      "id": "ST005",
+      "scenario": "Search student with invalid name",
+      "steps": "Enter invalid student name (Shriya) in search field",
+      "expected": "No records found message is displayed"
+    },
+    {
+      "id": "ST006",
+      "scenario": "Export selected student records",
+      "steps": "Select one or more student checkboxes → Click three dots (…) → Click Export",
+      "expected": "Selected student data is exported successfully"
+    },
+    {
+      "id": "ST007",
+      "scenario": "Import student data",
+      "steps": "Click three dots (…) → Click Import → Upload valid student file",
+      "expected": "Student data is imported successfully"
+    },
+    {
+      "id": "ST008",
+      "scenario": "Download students list",
+      "steps": "Click three dots (…) → Click Download",
+      "expected": "Students list file is downloaded successfully"
+    },
+    {
+      "id": "ST009",
+      "scenario": "Verify auto-generated Student ID",
+      "steps": "Click +Add → Observe Student ID field",
+      "expected": "Student ID is auto-generated and non-editable"
+    },
+    {
+      "id": "ST010",
+      "scenario": "Create student with valid data",
+      "steps": "Enter all mandatory fields with valid data → Click Submit",
+      "expected": "Student record is created successfully and shown in students list"
+    },
+    {
+      "id": "ST011",
+      "scenario": "Create student with inactive status",
+      "steps": "Enter all mandatory fields → Set status to Inactive → Click Submit",
+      "expected": "Student record is created with inactive (red X) status"
+    },
+    {
+      "id": "ST012",
+      "scenario": "Submit empty Create Student form",
+      "steps": "Open Create Student page → Click Submit without entering data",
+      "expected": "Validation error messages are displayed for required fields"
+    },
+    {
+      "id": "ST013",
+      "scenario": "Missing email and guardian contact validation",
+      "steps": "Fill all mandatory fields except Email and Guardian Contact → Click Submit",
+      "expected": "Validation errors are displayed for missing Email and Guardian Contact"
+    },
+    {
+      "id": "ST014",
+      "scenario": "Invalid email format validation",
+      "steps": "Enter invalid email format (abc.com) → Click Submit",
+      "expected": "Invalid email format error message is displayed"
+    },
+    {
+      "id": "ST015",
+      "scenario": "Invalid guardian contact number validation",
+      "steps": "Enter invalid guardian contact number → Click Submit",
+      "expected": "Invalid contact number validation error is displayed"
+    },
+    {
+      "id": "ST016",
+      "scenario": "Verify nationality dropdown values",
+      "steps": "Open Nationality dropdown",
+      "expected": "All nationality options are displayed correctly"
+    },
+    {
+      "id": "ST017",
+      "scenario": "Verify state dropdown values",
+      "steps": "Select nationality → Open State dropdown",
+      "expected": "All state options related to selected country are displayed"
+    },
+    {
+      "id": "ST018",
+      "scenario": "Verify city dropdown values",
+      "steps": "Select state → Open City dropdown",
+      "expected": "All city options related to selected state are displayed"
+    },
+    {
+      "id": "ST019",
+      "scenario": "Verify Grade/Class dropdown values",
+      "steps": "Open Grade/Class for Enrollment dropdown",
+      "expected": "All grade/class options are displayed"
+    },
+    {
+      "id": "ST020",
+      "scenario": "Verify Section dropdown values",
+      "steps": "Open Section dropdown",
+      "expected": "All section options (A, B, C, D) are displayed"
+    },
+    {
+      "id": "ST021",
+      "scenario": "Verify gender radio buttons",
+      "steps": "Select Male, Female, Others radio buttons",
+      "expected": "Gender radio buttons selection works correctly"
+    },
+    {
+      "id": "ST022",
+      "scenario": "Verify medical information radio buttons",
+      "steps": "Select YES and NO options for medical information",
+      "expected": "Medical information radio button selection works correctly"
+    },
+    {
+      "id": "ST023",
+      "scenario": "Verify Students module responsiveness",
+      "steps": "Open Students module in Mobile, Tablet, and Desktop resolutions",
+      "expected": "Students module UI is responsive across all devices"
+    }
+  ]
+}

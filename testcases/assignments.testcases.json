@@ -1,0 +1,26 @@
+{
+  "project": {
+    "name": "WON DIGI",
+    "url": "https://test.wondigi.com",
+    "executedBy": "Automation",
+    "build": "Assignments Module"
+  },
+  "module": "Assignments",
+  "testcases": [
+    { "id": "AS001", "scenario": "Open assignments page", "steps": "Navigate assignments", "expected": "Assignments page opens" },
+    { "id": "AS002", "scenario": "Assignment ID auto-generated", "steps": "Open create assignment", "expected": "ID auto generated" },
+    { "id": "AS003", "scenario": "Staff ID dropdown", "steps": "Click staff ID", "expected": "Staff IDs shown" },
+    { "id": "AS004", "scenario": "Staff name auto fill", "steps": "Select staff ID", "expected": "Staff name filled" },
+    { "id": "AS005", "scenario": "Assignment name", "steps": "Enter Maths", "expected": "Name accepted" },
+    { "id": "AS006", "scenario": "Assignment type", "steps": "Select Project-Based", "expected": "Type selected" },
+    { "id": "AS007", "scenario": "File upload", "steps": "Choose file", "expected": "File selected" },
+    { "id": "AS008", "scenario": "Class dropdown", "steps": "Select Grade 1", "expected": "Class selected" },
+    { "id": "AS009", "scenario": "Section dropdown", "steps": "Select A", "expected": "Section selected" },
+    { "id": "AS010", "scenario": "Subject dropdown", "steps": "Select subject", "expected": "Subject selected" },
+    { "id": "AS011", "scenario": "Due date system date", "steps": "Check due date", "expected": "System date shown" },
+    { "id": "AS012", "scenario": "Marks entry", "steps": "Enter 100", "expected": "Marks accepted" },
+    { "id": "AS013", "scenario": "Status dropdown", "steps": "Select Active", "expected": "Status selected" },
+    { "id": "AS014", "scenario": "Submit assignment", "steps": "Click Add", "expected": "Assignment saved" },
+    { "id": "AS015", "scenario": "Responsive UI", "steps": "Mobile/Tablet", "expected": "Responsive UI" }
+  ]
+}

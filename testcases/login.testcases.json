@@ -1,0 +1,102 @@
+{
+  "project": {
+    "name": "WEB APP",
+    "round": "WON DIGI Round 1",
+    "url": "https://test.wondigi.com/login",
+    "executedBy": "Manohar Srungaram",
+    "build": "Build-01"
+  },
+  "module": "Login Page",
+  "testcases": [
+    {
+      "id": "LP001",
+      "scenario": "Login with valid Super Admin credentials",
+      "steps": "1. Open Login page.\n2. Enter Email: user1@nowitservices.com.\n3. Enter Password: Nowit@123.\n4. Click Login.",
+      "expected": "User is successfully logged in and redirected to dashboard/home page."
+    },
+    {
+      "id": "LP002",
+      "scenario": "Login with valid Admin credentials",
+      "steps": "1. Open Login page.\n2. Enter Email: user2@nowitservices.com.\n3. Enter Password: Nowit@123.\n4. Click Login.",
+      "expected": "Admin user is successfully logged in and redirected to dashboard."
+    },
+    {
+      "id": "LP003",
+      "scenario": "Login with valid Staff credentials",
+      "steps": "1. Open Login page.\n2. Enter Email: user3@nowitservices.com.\n3. Enter Password: Nowit@123.\n4. Click Login.",
+      "expected": "Staff user is successfully logged in and redirected to dashboard."
+    },
+    {
+      "id": "LP004",
+      "scenario": "Login with valid Student credentials",
+      "steps": "1. Open Login page.\n2. Enter Email: user4@nowitservices.com.\n3. Enter Password: Nowit@123.\n4. Click Login.",
+      "expected": "Student user is successfully logged in and redirected to dashboard."
+    },
+    {
+      "id": "LP005",
+      "scenario": "Login with all fields empty",
+      "steps": "1. Open Login page.\n2. Click Login without entering Email and Password.",
+      "expected": "Validation messages are displayed for mandatory fields. User is not logged in."
+    },
+    {
+      "id": "LP006",
+      "scenario": "Email entered and Password left empty",
+      "steps": "1. Open Login page.\n2. Enter valid Email.\n3. Leave Password empty.\n4. Click Login.",
+      "expected": "Password required validation message is shown. Login is not allowed."
+    },
+    {
+      "id": "LP007",
+      "scenario": "Password entered and Email left empty",
+      "steps": "1. Open Login page.\n2. Enter Password.\n3. Leave Email empty.\n4. Click Login.",
+      "expected": "Email required validation message is shown. Login is not allowed."
+    },
+    {
+      "id": "LP008",
+      "scenario": "Login with invalid email format",
+      "steps": "1. Open Login page.\n2. Enter invalid Email (e.g. usergmail.com).\n3. Enter Password.\n4. Click Login.",
+      "expected": "Invalid email format validation message is displayed."
+    },
+    {
+      "id": "LP009",
+      "scenario": "Login with invalid password",
+      "steps": "1. Open Login page.\n2. Enter valid Email.\n3. Enter incorrect Password.\n4. Click Login.",
+      "expected": "Error message 'Invalid credentials' or 'Incorrect password' is displayed."
+    },
+    {
+      "id": "LP010",
+      "scenario": "Forgot Password navigation",
+      "steps": "1. Open Login page.\n2. Click Forgot Password link.",
+      "expected": "User is redirected to Forgot Password / Email OTP page."
+    },
+    {
+      "id": "LP011",
+      "scenario": "Forgot Password with registered email",
+      "steps": "1. Open Forgot Password page.\n2. Enter registered Email (user2@nowitservices.com).\n3. Click Send OTP.",
+      "expected": "OTP is sent successfully and user is navigated to OTP verification page."
+    },
+    {
+      "id": "LP012",
+      "scenario": "Forgot Password with unregistered email",
+      "steps": "1. Open Forgot Password page.\n2. Enter unregistered Email.\n3. Click Send OTP.",
+      "expected": "Proper error message 'Email not found' is displayed."
+    },
+    {
+      "id": "LP013",
+      "scenario": "Back to Home navigation from Login page",
+      "steps": "1. Open Login page.\n2. Click Back to Home button/link.",
+      "expected": "User is redirected to home page successfully."
+    },
+    {
+      "id": "LP014",
+      "scenario": "Keyboard navigation and Enter key login",
+      "steps": "1. Open Login page.\n2. Navigate fields using Tab key.\n3. Enter valid credentials.\n4. Press Enter key.",
+      "expected": "Login is triggered successfully using keyboard."
+    },
+    {
+      "id": "LP015",
+      "scenario": "UI responsiveness of Login page",
+      "steps": "1. Open Login page.\n2. Resize browser to mobile, tablet and desktop resolutions.",
+      "expected": "Login page UI renders correctly without overlap or break on all screen sizes."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "project": {
+    "name": "WON DIGI",
+    "url": "https://test.wondigi.com",
+    "executedBy": "Automation QA",
+    "build": "Library Module Automation"
+  },
+  "module": "Library",
+  "testcases": [
+    {
+      "id": "LB001",
+      "scenario": "Verify books table fields",
+      "steps": "Navigate to Library > Books",
+      "expected": "Book ID, Name, Description, Copies, Author, Category, Price, Status displayed"
+    },
+    {
+      "id": "LB002",
+      "scenario": "Verify active/inactive toggle",
+      "steps": "Click green tick and cancel popup",
+      "expected": "Status remains active"
+    },
+    {
+      "id": "LB003",
+      "scenario": "Verify inactive toggle confirm",
+      "steps": "Click green tick and confirm",
+      "expected": "Status changes to inactive"
+    },
+    {
+      "id": "LB004",
+      "scenario": "Verify three-dot menu",
+      "steps": "Click Import, Export, Download",
+      "expected": "Options should work correctly"
+    },
+    {
+      "id": "LB005",
+      "scenario": "Verify search in books",
+      "steps": "Search valid and invalid data",
+      "expected": "Filtered records shown"
+    },
+    {
+      "id": "LB006",
+      "scenario": "Verify Add Book form validation",
+      "steps": "Click +Add and check required fields",
+      "expected": "Required field errors shown"
+    },
+    {
+      "id": "LB007",
+      "scenario": "Create book with valid data",
+      "steps": "Enter all valid inputs and submit",
+      "expected": "Book created successfully"
+    },
+    {
+      "id": "LB008",
+      "scenario": "Verify users tab search",
+      "steps": "Search users by ID",
+      "expected": "User details displayed"
+    },
+    {
+      "id": "LB009",
+      "scenario": "Verify add book to user",
+      "steps": "Add book with valid details",
+      "expected": "Book assigned successfully"
+    },
+    {
+      "id": "LB010",
+      "scenario": "Verify responsive design",
+      "steps": "Check mobile and tablet view",
+      "expected": "UI responsive without break"
+    }
+  ]
+}

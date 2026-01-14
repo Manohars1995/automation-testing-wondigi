@@ -1,0 +1,177 @@
+{
+  "project": {
+    "name": "WEB APP",
+    "url": "https://test.wondigi.com/staffList",
+    "executedBy": "Cypress Automation",
+    "build": "Build-01"
+  },
+  "module": "Attendance - Staff",
+  "testcases": [
+
+    
+    {
+      "id": "ST001",
+      "scenario": "Verify staff list table headers",
+      "steps": "Navigate to Attendance → Staff → Verify table headers: Staff ID, Staff Name, Job Title, Class, Section, Contact, Job Status",
+      "expected": "All staff table headers are displayed correctly"
+    },
+    {
+      "id": "ST002",
+      "scenario": "Verify job status green tick indicator",
+      "steps": "Navigate to Staff List → Observe job status column for active staff",
+      "expected": "Active staff show green tick icon"
+    },
+    {
+      "id": "ST003",
+      "scenario": "Deactivate staff using job status icon",
+      "steps": "Click green tick icon → Confirmation popup appears → Click Mark Inactive",
+      "expected": "Job status changes to red X icon"
+    },
+    {
+      "id": "ST004",
+      "scenario": "Cancel staff deactivation",
+      "steps": "Click green tick icon → Confirmation popup → Click Cancel",
+      "expected": "Job status remains green tick"
+    },
+
+   
+    {
+      "id": "ST005",
+      "scenario": "Import staff data",
+      "steps": "Click three dots (…) → Click Import → Upload valid staff file",
+      "expected": "Staff data imported successfully"
+    },
+    {
+      "id": "ST006",
+      "scenario": "Export staff data",
+      "steps": "Click three dots (…) → Click Export",
+      "expected": "Staff data exported successfully"
+    },
+    {
+      "id": "ST007",
+      "scenario": "Download staff data",
+      "steps": "Click three dots (…) → Click Download",
+      "expected": "Staff data downloaded successfully"
+    },
+
+    
+
+    {
+      "id": "ST008",
+      "scenario": "Search staff with valid name",
+      "steps": "Enter valid staff name (Leela) in search field",
+      "expected": "Matching staff records are displayed"
+    },
+    {
+      "id": "ST009",
+      "scenario": "Search staff with invalid data",
+      "steps": "Enter invalid staff name in search field",
+      "expected": "No records found message displayed"
+    },
+
+   
+
+    {
+      "id": "ST010",
+      "scenario": "Open Add Staff form",
+      "steps": "Click Add button from staff list page",
+      "expected": "Create Staff page is opened"
+    },
+    {
+      "id": "ST011",
+      "scenario": "Verify Add Staff form sections",
+      "steps": "Verify sections: Staff Details, Address, Job Details, Class Information, Medical Information, Product/Services",
+      "expected": "All form sections are displayed"
+    },
+
+  
+
+    {
+      "id": "ST012",
+      "scenario": "Verify auto-generated Employee ID",
+      "steps": "Open Create Staff page → Observe Employee ID field",
+      "expected": "Employee ID is auto-generated"
+    },
+    {
+      "id": "ST013",
+      "scenario": "Create staff with valid data (Active)",
+      "steps": "Enter valid data in all mandatory fields → Status set to Active → Click Submit",
+      "expected": "Staff record created successfully and shown in staff list"
+    },
+    {
+      "id": "ST014",
+      "scenario": "Create staff with valid data (Inactive)",
+      "steps": "Enter valid data in all mandatory fields → Status set to Inactive → Click Submit",
+      "expected": "Staff record created with inactive status"
+    },
+
+ 
+
+    {
+      "id": "ST015",
+      "scenario": "Submit empty form",
+      "steps": "Open Create Staff page → Click Submit without entering any data",
+      "expected": "Validation error messages displayed for required fields"
+    },
+    {
+      "id": "ST016",
+      "scenario": "Submit form with missing email",
+      "steps": "Fill all required fields except Email → Click Submit",
+      "expected": "Email validation error displayed"
+    },
+    {
+      "id": "ST017",
+      "scenario": "Submit form with missing contact number",
+      "steps": "Fill all required fields except Contact → Click Submit",
+      "expected": "Contact validation error displayed"
+    },
+
+ 
+
+    {
+      "id": "ST018",
+      "scenario": "Invalid email format validation",
+      "steps": "Enter invalid email (abc@gmail) → Click Submit",
+      "expected": "Invalid email format error displayed"
+    },
+    {
+      "id": "ST019",
+      "scenario": "Invalid contact number validation",
+      "steps": "Enter invalid contact number (912345) → Click Submit",
+      "expected": "Invalid contact number error displayed"
+    },
+
+    
+
+    {
+      "id": "ST020",
+      "scenario": "Gender radio button selection",
+      "steps": "Select Male, Female, Others radio buttons",
+      "expected": "Gender radio button selection works correctly"
+    },
+    {
+      "id": "ST021",
+      "scenario": "Dropdown validation for Job Title",
+      "steps": "Open Job Title dropdown → Verify options: Principal, HOD, Teacher, Librarian, Accountant, Driver",
+      "expected": "All job title options displayed"
+    },
+
+
+
+    {
+      "id": "ST022",
+      "scenario": "Verify product/services auto population",
+      "steps": "Open Product/Services dropdown",
+      "expected": "Service IDs (SV00001 etc.) displayed"
+    },
+
+
+    {
+      "id": "ST023",
+      "scenario": "Verify staff module responsiveness",
+      "steps": "Check Staff module UI in Mobile, Tablet, Desktop resolutions",
+      "expected": "UI is responsive across all devices"
+    }
+
+  ]
+}

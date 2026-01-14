@@ -1,0 +1,71 @@
+{
+  "project": {
+    "name": "WON DIGI",
+    "url": "https://test.wondigi.com",
+    "executedBy": "Automation",
+    "build": "CARE MODULE"
+  },
+  "module": "Care",
+  "testcases": [
+    {
+      "id": "CR001",
+      "scenario": "Search with valid student name",
+      "steps": "Enter Kayal in search box",
+      "expected": "Student Kayal should be listed"
+    },
+    {
+      "id": "CR002",
+      "scenario": "Search with invalid name",
+      "steps": "Enter invalid text",
+      "expected": "No records found message"
+    },
+    {
+      "id": "CR003",
+      "scenario": "Verify care list fields",
+      "steps": "Check table headers",
+      "expected": "All columns visible"
+    },
+    {
+      "id": "CR004",
+      "scenario": "Toggle active to inactive cancel",
+      "steps": "Click green tick and cancel",
+      "expected": "Status remains active"
+    },
+    {
+      "id": "CR005",
+      "scenario": "Toggle active to inactive confirm",
+      "steps": "Click green tick and confirm",
+      "expected": "Status turns inactive"
+    },
+    {
+      "id": "CR006",
+      "scenario": "Open care detail view",
+      "steps": "Click student ID",
+      "expected": "Care detail page opens"
+    },
+    {
+      "id": "CR007",
+      "scenario": "Care detail widgets and toggles",
+      "steps": "Verify widgets, search, toggles",
+      "expected": "All widgets visible and working"
+    },
+    {
+      "id": "CR008",
+      "scenario": "Filter by class and section",
+      "steps": "Select Grade 1 and Section A",
+      "expected": "Filtered data shown"
+    },
+    {
+      "id": "CR009",
+      "scenario": "Mobile responsiveness",
+      "steps": "Check in mobile view",
+      "expected": "UI responsive"
+    },
+    {
+      "id": "CR010",
+      "scenario": "Tablet responsiveness",
+      "steps": "Check in tablet view",
+      "expected": "UI responsive"
+    }
+  ]
+}

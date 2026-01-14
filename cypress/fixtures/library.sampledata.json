@@ -1,0 +1,18 @@
+{
+  "book": {
+    "bookName": "manohar",
+    "author": "manohar",
+    "publishers": "manohar publishers",
+    "category": "comic",
+    "price": "100000",
+    "aisle": "11111",
+    "rack": "121",
+    "quadrant": "11111",
+    "copies": "100",
+    "description": "hi",
+    "referenceId": "123456789"
+  },
+  "user": {
+    "subId": "1111"
+  }
+}
